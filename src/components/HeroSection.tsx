@@ -202,7 +202,7 @@ export default function HeroSection() {
                 <div className="transform transition-all duration-500 hover:scale-105">
                   {services[currentIndex]?.content || (
                     <InstagramPost
-                      image={services[currentIndex]?.image || services[0].image}
+                      image={services[currentIndex]?.image ?? services[0].image ?? ""}
                       hasInteractions={services[currentIndex]?.hasInteractions}
                     />
                   )}
